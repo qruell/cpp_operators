@@ -2,19 +2,54 @@
 using namespace std;
 
 int main() {
-    int num, maxNum;
+    int a, b, c, d, e, f, g;
 
-    cout << "Enter 7 integers: ";
-    cin >> maxNum;
+    cout << "Enter a number: ";
+    cin >> a;
+    cout << "Enter a number: ";
+    cin >> b;
 
-    for (int i = 1; i < 7; ++i) {
-        cin >> num;
-        if (num > maxNum) {
-            maxNum = num;
-        }
+    if (b > a) {
+        a = b;
     }
 
-    cout << "The maximum number is: " << maxNum << endl;
+    cout << "Enter a number: ";
+    cin >> c;
+
+    if (c > a) {
+        a = c;
+    }
+
+    cout << "Enter a number: ";
+    cin >> d;
+
+    if (d > a) {
+        a = d;
+    }
+
+    cout << "Enter a number: ";
+    cin >> e;
+
+    if (e > a) {
+        a = e;
+    }
+
+    cout << "Enter a number: ";
+    cin >> f;
+
+    if (f > a) {
+        a = f;
+    }
+
+    cout << "Enter a number: ";
+    cin >> g;
+
+    if (g > a) {
+        a = g;
+    }
+
+    cout << "The maximum number is: " << a << endl;
 
     return 0;
 }
+
