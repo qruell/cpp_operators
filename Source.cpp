@@ -1,6 +1,5 @@
 #include <iostream>
 #include <Windows.h>
-#include <string>
 using namespace std;
 
 int main() {
@@ -8,12 +7,17 @@ int main() {
     SetConsoleCP(1251);
 
     int number1, number2;
-    std::cout << "Введіть перше число: ";
-    std::cin >> number1;
-    std::cout << "Введіть друге число: ";
-    std::cin >> number2;
+    cout << "Введіть перше число: ";
+    cin >> number1;
+    cout << "Введіть друге число: ";
+    cin >> number2;
 
-    std::cout << (number1 == number2 ? "Числа рівні.\n" : "Числа не рівні. В порядку зростання: " + std::to_string((number1 < number2 ? number1 : number2)) + ", " + std::to_string((number1 < number2 ? number2 : number1)) + "\n");
+    cout << (number1 == number2 ? "Числа рівні.\n" : "Числа не рівні. В порядку зростання: ");
+
+    if (number1 < number2)
+        cout << number1 << ", " << number2 << "\n";
+    else
+        cout << number2 << ", " << number1 << "\n";
 
     return 0;
 }
